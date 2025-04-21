@@ -1,0 +1,407 @@
+*{
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+.container {
+    width: 100%;  /* Garante que o contêiner ocupe 100% da largura disponível */
+    max-width: 1200px; /* Define um limite de largura, se necessário */
+    padding: 0 15px; /* Ajuste de padding para evitar que o conteúdo se espalhe demais */
+}
+
+
+:root {
+    --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --heading-font: "Raleway",  sans-serif;
+    --nav-font: "Poppins",  sans-serif;
+  }
+i {
+    margin-left: 20px;
+    font-size: 20px;
+}
+#face{
+    color:#3b5998;
+}
+#linkedin{
+    color: #0e76a8;
+}
+#insta{
+    background: linear-gradient(45deg, #515bd4,  #B134AF, #D02A7B, #FFDA72, #f58529); /* Gradiente do logo do Instagram */
+    -webkit-background-clip: text; /* Aplica o gradiente ao texto (ícone) */
+    color: transparent; /* Torna o texto transparente para mostrar o gradiente */
+    display: inline-block; /* Faz o ícone se comportar como um bloco inline */
+}
+#whats{
+    color: #4cb61b;
+    margin-right: 5px;
+}
+#paragrafo{
+    padding-top: 2px;
+    margin-bottom: 0;
+    font-family: var(--nav-font);
+    width: 180px;
+
+}
+#contatowhats{
+    margin-right: 100px;
+}
+#icones{
+    margin-left: 100px;
+}
+header{
+    /* background:#87CEEB; */
+   background-color:  rgb(232, 244, 255);
+}   
+    
+
+#x{
+    color: black;
+}
+a{
+    cursor: pointer;
+
+    
+}
+i {
+    margin-left: 20px;
+    font-size: 20px;
+    position: relative; /* Necessário para o posicionamento do pseudo-elemento */
+    display: inline-block; /* Garante que o ícone ocupe o tamanho certo */
+}
+
+/* Adicionando o efeito de linha no hover */
+.linha::after {
+    content: ""; /* Cria o pseudo-elemento */
+    position: absolute;
+    bottom: 0; /* Posiciona a linha na parte inferior do ícone */
+    left: 50%; /* Começa no meio do ícone */
+    width: 0; /* A linha começa com largura zero */
+    height: 2px; /* Definindo a altura da linha */
+    background-color: black; /* Cor da linha */
+    transform: translateX(-50%); /* Move a linha para o centro */
+    transition: width 0.3s ease-in-out; /* Transição suave */
+}
+
+/* No hover, a linha se expande para as extremidades */
+i:hover::after {
+    width: 100%; /* A linha se expande até as extremidades */
+}
+.navmenu a {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 10px;
+}
+.navmenu {
+    background-color: #7a90c0;
+    white-space: nowrap; /* Impede que os itens se quebrem */
+    overflow: hidden;    /* Evita que o conteúdo transborde */
+    text-align: center;  /* Garante que os itens de menu se alinhem corretamente */
+}
+.navmenu li:hover{
+    background-color: rgb(255, 255, 255);
+    color:  #61a9c5;
+    transition: all ease-in-out;
+}
+.navmenu ul li {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 0 15px;
+    border-radius: 20px;
+}
+.imagem{
+    background-image: url(imagens/imagemdefrente.png);
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+    height: 73vh;
+    
+}
+.navmenu ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;  /* Remove marcadores da lista */
+}
+#paragrafoshistoria {
+    font-family: var(--default-font);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #000000;
+    text-align: justify;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0 10px; /* Ajuste do padding */
+    max-width: 100%; /* Garante que o conteúdo não ultrapasse a largura do contêiner */
+    box-sizing: border-box; /* Inclui o padding na largura total */
+}
+
+#frasedeefeitohistoria{
+    font-size: 1.4rem;
+    color: #066574;
+}
+#historia{
+    background-color: rgba(220, 240, 252, 0.616);
+    border-radius: 20px;
+}
+h3{
+    display: flex;
+    justify-content: center;
+}
+.divservicos{
+    font-family: var(--default-font); /* Fonte padrão definida na variável */
+    font-size: 1.1rem; /* Tamanho de fonte um pouco maior para facilitar a leitura */
+    line-height: 1.6; /* Aumenta o espaçamento entre as linhas para tornar o texto mais arejado */
+    color: #000000; /* Cor do texto em tom cinza escuro para suavizar a leitura */
+    /* Justifica o texto para as linhas ficarem alinhadas */
+    text-align: justify;
+    padding: 0 50px;
+    background-color:  rgb(215, 231, 245); 
+    margin-right: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3); /* Sombra com deslocamento, desfoque e cor  */
+}
+.divservicos:hover{
+    background-color: #6d86bd;
+    color: aliceblue;
+    border-radius: 20px;
+    transition: all 99ms ease-in-out;
+    
+}
+#Serviços {
+    /* Ajuste da largura e margens para garantir boa aparência em telas grandes */
+    margin-top: 30px;
+    padding: 20px;
+}
+#Serviços .container {
+    /* Garantir que o conteúdo não ultrapasse as bordas da tela */
+    max-width: 100%;
+    width: 100%;
+}
+#tituloduvidas {
+    position: relative;
+    display: inline-block;  /* Permite que o ::after funcione corretamente */
+    /* padding-bottom: 10px; */
+}
+#sectionduvidas{
+    border-top: 5px solid #6d86bd;
+    background-color: rgb(250, 250, 250);
+}
+#tituloduvidas{
+    font-size: 1.3rem;
+}
+
+h3{
+    margin: 0px;
+    padding: 0px;
+}
+.meubotao:hover{
+    background-color: #ffffff;
+    color:#367694;
+}
+.meubotao{
+    border: 1px solid #0000002f;
+    background-color: #367694;
+    color: #fff;
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+
+}
+.meubotao:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Sombra mais intensa no hover */
+    transform: translateY(-2px); /* Levanta o botão ao passar o mouse */
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+.meubotao:active {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra reduzida quando pressionado */
+    transform: translateY(1px); /* Desce o botão um pouco quando pressionado */
+}
+
+footer{
+    background-color:  rgb(199, 223, 245); 
+}
+.dropdown-item{
+    font-family: var(--nav-font) !important;
+    font-size: 15px !important;
+    
+}
+
+.dropdown-item:active {
+    background-color:  rgb(199, 223, 245) !important; /* Exemplo de cor verde */
+}
+.dropdown-item:hover {
+    background-color:  rgb(199, 223, 245) !important; /* Cor de fundo azul mais escuro */
+}
+
+.borda{
+    border: 4px solid rgba(127, 157, 184, 0.192) ;
+    border-radius: 50px;
+    height: 80px;
+    margin-left: 10px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#iconesfooter{
+    margin: 0;
+    color: #fff;
+    font-size: 40px;
+}
+.caue{
+    display: flex;
+    justify-content: center;
+    font-family: var(--nav-font);
+    font-size: 20px;
+}
+.linhaborda{
+    border-bottom:2px solid black ;
+    padding: 1px;
+}
+
+@media (max-width: 995px) {
+    
+    #divpai{
+        flex-wrap: wrap;
+    }
+    .divservicos {
+        flex: 1 1 45%; /* Cada div ocupa 45% da largura em telas menores */
+    }
+    #medicacaoid{
+        margin-top: 20px;
+    }
+    
+}
+@media (max-width: 884px) {
+    #venhatrabalhar{
+        display: block;
+        width: 100%;
+    }
+
+}
+@media (max-width: 829px) {
+    #idfooter{
+        flex-wrap: wrap;
+    }
+    #venhatrabalhar{
+        display: block;
+        width: 100%;
+    }
+    #idemail{
+        display: block;
+        width: 100%;
+        margin-left: 48px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    #higiene{
+        margin-top: 24px;
+    }
+    #medicacaoid{
+        margin-top: 24px;
+    }
+    #lazer{
+        margin-top: 10px;
+    }
+
+}
+
+@media (max-width: 679px) {
+    #icones{
+        margin-left: 0;
+    }   
+    #contatowhats{
+        margin-right: 0;
+    }
+}
+@media (max-width:619px){
+    #historianav{ 
+        font-size: 16px;
+        
+    }
+    #servicosnav{ 
+        font-size: 16px;
+    }
+    #qualidadenav{ 
+        font-size: 16px;
+    }
+    #duvidasnav{ 
+        font-size: 16px;
+    }
+}
+@media (max-width:585px){
+    #idmenu{
+        margin: 0;
+    }
+}
+@media(max-width:1364px){
+    #divdosicones{
+        display: none !important;
+    }
+
+}
+@media(max-width:996px){
+    .palavrasdoheader{
+      margin-right: 50px !important;  
+    }  
+}
+@media(max-width:769px){
+.divcontainer{
+    margin-left: 0px !important;
+}
+}
+@media (max-width: 568px) {
+    .imagemresponsiva {
+       background-attachment: scroll;
+       margin-top: 0px !important;
+    }
+}
+
+#serviçostitulo {
+    display: inline-block;  /* Faz o h1 ter a largura igual ao conteúdo do texto */
+    border-bottom: 2px solid black;  /* Linha preta abaixo do texto */
+    padding-bottom: 5px;  /* Ajusta o espaçamento entre o texto e a linha */
+    width: 100px;
+    justify-content: center;
+}
+/* Esconde o input de arquivo original */
+.inputfile {
+    display: none;
+}
+
+/* Estiliza o botão de upload */
+.custom-file-upload {
+    display: inline-block;
+    padding: 6px 10px;
+    background-color: #367694;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Efeito de hover no botão */
+.custom-file-upload:hover {
+    background-color: #5a95bd;
+}
+
+/* Estilo para mostrar o nome do arquivo escolhido */
+#file-upload:valid + .custom-file-upload {
+    background-color: #2196F3;
+}
+
+#file-upload:valid + .custom-file-upload::after {
+    content: "Arquivo selecionado";
+    color: #fff;
+    font-weight: bold;
+    padding-left: 10px;
+}
